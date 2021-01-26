@@ -2,6 +2,8 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import CardWidget from '../CartWidget';
+
 import './index.css';
 const NavbarComponent = () =>{
     return (
@@ -12,6 +14,8 @@ const NavbarComponent = () =>{
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
         <Nav.Link href="#home">Inicio</Nav.Link>
+
+        <Nav.Link href="#home"><CardWidget /></Nav.Link>
             <NavDropdown title="Productos..." id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#categoria1">categoria1</NavDropdown.Item>
                 <NavDropdown.Divider />
